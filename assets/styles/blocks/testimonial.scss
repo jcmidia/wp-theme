@@ -1,0 +1,39 @@
+.testimonial {
+	padding: em(50);
+	min-height: em(600);
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: em(80) 0;
+	background-size: auto 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: $mobile_breakpoint) {
+		min-height: auto;
+		margin: em(40) 0;
+		padding: em(40) 1.5em;
+	}
+
+	&__blockquote {
+		max-width: em(1120);
+	}
+
+	&__text {
+		display: block;
+		@extend .title-h1;
+	}
+
+	&__author {
+		@extend .title-h3;
+		display: block;
+		margin-top: 1em;
+		opacity: 0.5;
+
+		@media screen and (max-width: $mobile_breakpoint) {
+			font-size: em(14);
+			line-height: em(22, 14);
+		}
+	}
+}

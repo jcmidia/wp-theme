@@ -1,0 +1,27 @@
+$browser_context: 16; // Default
+
+@function rem($pixels, $context: $browser_context) {
+    @return #{$pixels/$context}rem;
+} 
+  
+@function em($pixels, $context: $browser_context) {
+    @return #{$pixels/$context}em;
+}
+
+$tablet_breakpoint: em(1480);
+$small_breakpoint: em(768);
+$mobile_breakpoint: em(468);
+
+$font_body: 'Graphik';
+$font_title: 'Neue';
+
+$color_body: #02002D;
+$color_bg: #D9E7FF;
+$color1: #2D70FF;
+$color2: #3B9DFF;
+$color3: #676681;
+$color4: #808096;
+$color4: #B3B3C0;
+
+$curve: cubic-bezier(.19,1,.22,1);
+$theme_path: '/wp-content/themes/spruce-theme/assets/images/';
